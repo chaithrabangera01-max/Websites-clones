@@ -1,0 +1,215 @@
+
+
+.logo img {
+    width: 160px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+    padding: 20px;
+}
+
+.center ul {
+    display: flex;
+    gap: 30px;
+
+}
+
+.center ul li {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    font-size: 16px;
+}
+
+.left ul {
+    display: flex;
+    gap: 30px;
+}
+
+.left ul li {
+    list-style: none;
+    font-size: 16px;
+}
+
+.left li:first-child {
+    border: 3px solid black;
+    padding: 0 18px;
+    font-weight: bolder;
+
+}
+
+main {
+    padding-top: 70px;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+}
+
+.container {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    justify-content: center;
+    gap: 37px;
+    background-color: white;
+
+}
+
+.item {
+
+    height: 270px;
+    /* background-color: rgb(216, 216, 216); */
+    background-color: rgb(237, 242, 242);
+    text-align: center;
+}
+
+.green-btn {
+    background-color: rgb(94, 237, 94);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    width: 160px;
+    height: 31px;
+
+
+}
+
+* {
+    font-family: 'Segoe UI';
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+span {
+
+    font-size: 45px;
+}
+
+.para {
+
+    font-size: 20px;
+
+}
+
+.blue-btn {
+    color: white;
+    padding: 7px;
+    border: #38c7ef;
+    font-weight: bold;
+    min-height: 48px;
+    min-width: 256px;
+    font-size: 14px;
+    background-color: #00b6d1;
+    border-width: 0 !important;
+    border-radius: 5px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+
+}
+
+.logo2 {
+    position: relative;
+    top: 35px;
+
+
+}
+
+strong {
+    font-size: x-large;
+}
+
+/* Container Background */
+.newsletter-section {
+    background-color: #000000;
+    /* Dark background */
+    color: white;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.newsletter-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* Ensures it looks good on mobile */
+}
+
+/* Left Side Text */
+.newsletter-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.newsletter-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.newsletter-text p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* Right Side Card */
+.subscribe-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
+    color: #333;
+    text-align: center;
+}
+
+.subscribe-card h3 {
+    color: #00b6d1;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.subscribe-card label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Input Field */
+.subscribe-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't break width */
+}
+
+/* light blue Button */
+.subscribe-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00b6d1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
