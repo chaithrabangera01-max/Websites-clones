@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+
+    background-image: url(assests/netflixclone.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1800px, 100vw);
+
+    height: 89vh;
+    width: 100%;
+    position: relative;
+}
+
+.main .box {
+    height: 89vh;
+    background-color: black;
+    opacity: 0.77;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+}
+
+/* Making nav as flex box */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 80vw;
+    height: 90px;
+
+
+}
+
+nav img {
+
+    color: rgb(229, 9, 20);
+    width: 9.25rem;
+    height: 2.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+}
+
+/* netflix text */
+.text {
+    padding: 23px;
+    height: 80%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    gap: 5px;
+
+}
+
+.text>*:first-child {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 125%;
+    text-align: center;
+}
+
+.text>*:nth-child(2) {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 90%;
+    text-align: center;
+
+}
+
+.text>*:nth-child(3) {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.text>*:nth-child(4) {
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 3;
+    gap: 3px;
+    text-align: center;
+}
+
+.separation {
+    position: relative;
+
+    width: 100%;
+    height: 1px;
+    overflow: visible;
+    border: solid .25rem transparent;
+    border-top-left-radius: 40% 100%;
+    border-top-right-radius: 30% 80%;
+    border-bottom: none;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), #210d16 84%);
+
+
+}
+
+.curve-svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+
+}
+
+.curve-svg::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+
+    left: 0;
+    width: 100%;
+    height: 79px;
+    background: linear-gradient(to bottom,
+            rgba(6, 97, 231, 0.4),
+            /* bluish glow */
+            rgba(173, 216, 230, 0.2),
+            /* light blue */
+            transparent);
+    z-index: 0;
+}
+
+input {
+    height: 55px;
+    width: 340px;
+    background-color: transparent;
+    font-size: larger;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    color: white;
+    border-radius: 3px;
+
+
+}
+
+.btn:hover {
+    background-color: rgba(224, 24, 24, 0.738);
+    cursor: pointer;
+}
+
+.btn1 {
+    padding: 18px 60px;
+    font-weight: 500;
+    font-size: larger;
+    border-radius: 5px;
+
+
+}
+.wbtn
+{
+    width:59px;
+}
+
+.btn2 {
+
+    padding: 9px 20px;
+
+}
+
+/* language btn */
+.btn3 {
+    padding: 0px 20px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    position: relative;
+    border-radius: 2px;
+
+}
+
+
+.trend h2 {
+    color: white;
+    padding: 60px;
+    /* margin-top: 10px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    align-items: start;
+    margin-left: 2%;
+}
+
+
+.container {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.picture {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 30px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar  */
+.picture::-webkit-scrollbar {
+    display: none;
+}
+
+.pics {
+    flex: 0 0 auto;
+    width: 150px;
+    scroll-snap-align: start;
+}
+
+.pics img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .picture {
+        padding: 50px 90px;
+        gap: 30px;
+    }
+
+    .pics {
+        width: 200px;
+    }
+}
+
+
+.picture .pics img {
+    width: 180px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease-in-out, filter 0.4s ease !important;
+}
+
+.picture .pics img:hover {
+    transform: scale(1.2) !important;
+    filter: brightness(1.2);
+    z-index: 100;
+
+}
+
+.colbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 150px;
+    flex: 1 0 400px;
+    max-width: 300px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #191930 0%, #0d0d14 100%);
+    border-radius: 12px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+
+faq-container {
+    width: 50%;
+    max-width: 700px;
+    margin: 0;
+}
+
+.faq-item {
+    margin-left: 5%;
+    margin-bottom: 8px;
+}
+.faq-question {
+    width: 80%;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.faq-question:hover {
+    background-color: #414141;
+}
+
+.plus-icon {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
